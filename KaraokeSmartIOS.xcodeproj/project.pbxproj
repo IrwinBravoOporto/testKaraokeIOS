@@ -3,27 +3,93 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CE71ADAE6F455C97E15F0C7 /* Pods_KaraokeSmartIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C4BBEA904671B883077396 /* Pods_KaraokeSmartIOS.framework */; };
 		9AB6A58F243E167000520849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A58E243E167000520849 /* AppDelegate.swift */; };
 		9AB6A591243E167000520849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A590243E167000520849 /* SceneDelegate.swift */; };
-		9AB6A593243E167000520849 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A592243E167000520849 /* ViewController.swift */; };
 		9AB6A596243E167000520849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6A594243E167000520849 /* Main.storyboard */; };
 		9AB6A598243E167B00520849 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6A597243E167B00520849 /* Assets.xcassets */; };
 		9AB6A59B243E167B00520849 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6A599243E167B00520849 /* LaunchScreen.storyboard */; };
+		9AB6A5B5243E285500520849 /* ProfileUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5B4243E285500520849 /* ProfileUserViewController.swift */; };
+		9AB6A5BF243E40AA00520849 /* MusicKaraokeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5BD243E40AA00520849 /* MusicKaraokeTableViewCell.swift */; };
+		9AB6A5C6243E4C9900520849 /* ProfileDetailEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5C5243E4C9900520849 /* ProfileDetailEditViewController.swift */; };
+		9AB6A5CD243E70B700520849 /* ProfileUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5CC243E70B700520849 /* ProfileUserConfigurator.swift */; };
+		9AB6A5CF243E70D500520849 /* ProfileUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5CE243E70D500520849 /* ProfileUserPresenter.swift */; };
+		9AB6A5D1243E70E400520849 /* ProfileUserPresenterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D0243E70E400520849 /* ProfileUserPresenterRouter.swift */; };
+		9AB6A5D5243E742900520849 /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D4243E742900520849 /* ViewData.swift */; };
+		9AB6A5D7243E7FF100520849 /* ProfileEditViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D6243E7FF100520849 /* ProfileEditViewData.swift */; };
+		9AB6A5DA243E804000520849 /* ProfileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D9243E804000520849 /* ProfileDetail.swift */; };
+		9AB6A5DE243E838C00520849 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5DD243E838C00520849 /* Profile.swift */; };
+		9AB6A5E2243EB45300520849 /* ProfileInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5E1243EB45300520849 /* ProfileInteractorProtocol.swift */; };
+		9AB6A5E4243EB4D400520849 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5E3243EB4D400520849 /* Interactor.swift */; };
+		9AB6A5E7243EBBD900520849 /* ProfileRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5E6243EBBD900520849 /* ProfileRepositoryProtocol.swift */; };
+		9AB6A5ED243EBD6E00520849 /* ResquestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5EC243EBD6E00520849 /* ResquestProtocol.swift */; };
+		9AB6A5EF243EBDAD00520849 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5EE243EBDAD00520849 /* ProfileRequest.swift */; };
+		9AB6A5F4243EBF6F00520849 /* ServiceDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5F3243EBF6F00520849 /* ServiceDataSourceProtocol.swift */; };
+		9AB6A5F8243EBFDC00520849 /* ProfileDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5F7243EBFDC00520849 /* ProfileDetailEntity.swift */; };
+		9AB6A5FA243EC03F00520849 /* ProfileEditEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5F9243EC03F00520849 /* ProfileEditEntity.swift */; };
+		9AB6A5FD243EC99100520849 /* ProfileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5FC243EC99100520849 /* ProfileRepository.swift */; };
+		9AB6A5FF243ECA1300520849 /* ServiceDataSourceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5FE243ECA1300520849 /* ServiceDataSourceImplementation.swift */; };
+		9AB6A603243ECB1000520849 /* TimberjackHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A600243ECB1000520849 /* TimberjackHelper.swift */; };
+		9AB6A608243ECBCA00520849 /* Rechability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A607243ECBCA00520849 /* Rechability.swift */; };
+		9AB6A615243ECFDF00520849 /* ServiceResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A60E243ECFDE00520849 /* ServiceResponseHandler.swift */; };
+		9AB6A616243ECFDF00520849 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A610243ECFDE00520849 /* ServiceError.swift */; };
+		9AB6A617243ECFDF00520849 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A611243ECFDE00520849 /* HttpError.swift */; };
+		9AB6A618243ECFDF00520849 /* ServiceErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A613243ECFDE00520849 /* ServiceErrorHandler.swift */; };
+		9AB6A619243ECFDF00520849 /* HttpErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A614243ECFDE00520849 /* HttpErrorHandler.swift */; };
+		9AB6A61C243ED86200520849 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A61A243ED86200520849 /* ErrorResponse.swift */; };
+		9AB6A61D243ED86200520849 /* ResponseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A61B243ED86200520849 /* ResponseType.swift */; };
+		9AB6A623243EE41B00520849 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A622243EE41B00520849 /* Loadable.swift */; };
+		9AB6A628243EE5F100520849 /* ErrorPlaceholderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6A626243EE5F100520849 /* ErrorPlaceholderView.xib */; };
+		9AB6A629243EE5F100520849 /* ErrorPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A627243EE5F100520849 /* ErrorPlaceholderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33C4BBEA904671B883077396 /* Pods_KaraokeSmartIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaraokeSmartIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB6A58B243E167000520849 /* KaraokeSmartIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokeSmartIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB6A58E243E167000520849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB6A590243E167000520849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9AB6A592243E167000520849 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AB6A595243E167000520849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AB6A597243E167B00520849 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB6A59A243E167B00520849 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AB6A59C243E167B00520849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB6A5B4243E285500520849 /* ProfileUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserViewController.swift; sourceTree = "<group>"; };
+		9AB6A5BD243E40AA00520849 /* MusicKaraokeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicKaraokeTableViewCell.swift; sourceTree = "<group>"; };
+		9AB6A5C5243E4C9900520849 /* ProfileDetailEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailEditViewController.swift; sourceTree = "<group>"; };
+		9AB6A5CC243E70B700520849 /* ProfileUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserConfigurator.swift; sourceTree = "<group>"; };
+		9AB6A5CE243E70D500520849 /* ProfileUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserPresenter.swift; sourceTree = "<group>"; };
+		9AB6A5D0243E70E400520849 /* ProfileUserPresenterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserPresenterRouter.swift; sourceTree = "<group>"; };
+		9AB6A5D4243E742900520849 /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
+		9AB6A5D6243E7FF100520849 /* ProfileEditViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewData.swift; sourceTree = "<group>"; };
+		9AB6A5D9243E804000520849 /* ProfileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetail.swift; sourceTree = "<group>"; };
+		9AB6A5DD243E838C00520849 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		9AB6A5E1243EB45300520849 /* ProfileInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractorProtocol.swift; sourceTree = "<group>"; };
+		9AB6A5E3243EB4D400520849 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		9AB6A5E6243EBBD900520849 /* ProfileRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepositoryProtocol.swift; sourceTree = "<group>"; };
+		9AB6A5EC243EBD6E00520849 /* ResquestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResquestProtocol.swift; sourceTree = "<group>"; };
+		9AB6A5EE243EBDAD00520849 /* ProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
+		9AB6A5F3243EBF6F00520849 /* ServiceDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDataSourceProtocol.swift; sourceTree = "<group>"; };
+		9AB6A5F7243EBFDC00520849 /* ProfileDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailEntity.swift; sourceTree = "<group>"; };
+		9AB6A5F9243EC03F00520849 /* ProfileEditEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditEntity.swift; sourceTree = "<group>"; };
+		9AB6A5FC243EC99100520849 /* ProfileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRepository.swift; sourceTree = "<group>"; };
+		9AB6A5FE243ECA1300520849 /* ServiceDataSourceImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDataSourceImplementation.swift; sourceTree = "<group>"; };
+		9AB6A600243ECB1000520849 /* TimberjackHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimberjackHelper.swift; sourceTree = "<group>"; };
+		9AB6A607243ECBCA00520849 /* Rechability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rechability.swift; sourceTree = "<group>"; };
+		9AB6A60E243ECFDE00520849 /* ServiceResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResponseHandler.swift; sourceTree = "<group>"; };
+		9AB6A610243ECFDE00520849 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		9AB6A611243ECFDE00520849 /* HttpError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
+		9AB6A613243ECFDE00520849 /* ServiceErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceErrorHandler.swift; sourceTree = "<group>"; };
+		9AB6A614243ECFDE00520849 /* HttpErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpErrorHandler.swift; sourceTree = "<group>"; };
+		9AB6A61A243ED86200520849 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		9AB6A61B243ED86200520849 /* ResponseType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseType.swift; sourceTree = "<group>"; };
+		9AB6A622243EE41B00520849 /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		9AB6A626243EE5F100520849 /* ErrorPlaceholderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorPlaceholderView.xib; sourceTree = "<group>"; };
+		9AB6A627243EE5F100520849 /* ErrorPlaceholderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPlaceholderView.swift; sourceTree = "<group>"; };
+		A052F0A3683C555667053DDB /* Pods-KaraokeSmartIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaraokeSmartIOS.debug.xcconfig"; path = "Target Support Files/Pods-KaraokeSmartIOS/Pods-KaraokeSmartIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DDCA1C7254013964EB0989DF /* Pods-KaraokeSmartIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaraokeSmartIOS.release.xcconfig"; path = "Target Support Files/Pods-KaraokeSmartIOS/Pods-KaraokeSmartIOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +97,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CE71ADAE6F455C97E15F0C7 /* Pods_KaraokeSmartIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41DBFA8E8EA092B41678CA75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33C4BBEA904671B883077396 /* Pods_KaraokeSmartIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F8DFF57CF96B623CC3F86A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A052F0A3683C555667053DDB /* Pods-KaraokeSmartIOS.debug.xcconfig */,
+				DDCA1C7254013964EB0989DF /* Pods-KaraokeSmartIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9AB6A582243E166F00520849 = {
 			isa = PBXGroup;
 			children = (
 				9AB6A58D243E167000520849 /* KaraokeSmartIOS */,
+				9AB6A5D3243E712C00520849 /* Domain */,
+				9AB6A5D2243E712200520849 /* Data */,
 				9AB6A58C243E167000520849 /* Products */,
+				5F8DFF57CF96B623CC3F86A4 /* Pods */,
+				41DBFA8E8EA092B41678CA75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +146,346 @@
 			children = (
 				9AB6A58E243E167000520849 /* AppDelegate.swift */,
 				9AB6A590243E167000520849 /* SceneDelegate.swift */,
-				9AB6A592243E167000520849 /* ViewController.swift */,
 				9AB6A594243E167000520849 /* Main.storyboard */,
 				9AB6A597243E167B00520849 /* Assets.xcassets */,
 				9AB6A599243E167B00520849 /* LaunchScreen.storyboard */,
 				9AB6A59C243E167B00520849 /* Info.plist */,
+				9AB6A5C3243E4C6300520849 /* DetailProfile */,
+				9AB6A5C1243E4C3700520849 /* ProfileUser */,
+				9AB6A61E243EE3B900520849 /* Support */,
 			);
 			path = KaraokeSmartIOS;
+			sourceTree = "<group>";
+		};
+		9AB6A5BC243E370900520849 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5BD243E40AA00520849 /* MusicKaraokeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9AB6A5C1243E4C3700520849 /* ProfileUser */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A61F243EE3E500520849 /* New Group */,
+				9AB6A5C7243E55DD00520849 /* Router */,
+				9AB6A5C8243E55E800520849 /* Presenter */,
+				9AB6A5C9243E55F900520849 /* View */,
+				9AB6A5D4243E742900520849 /* ViewData.swift */,
+			);
+			path = ProfileUser;
+			sourceTree = "<group>";
+		};
+		9AB6A5C2243E4C4800520849 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5B4243E285500520849 /* ProfileUserViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9AB6A5C3243E4C6300520849 /* DetailProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5C4243E4C7100520849 /* Controller */,
+			);
+			path = DetailProfile;
+			sourceTree = "<group>";
+		};
+		9AB6A5C4243E4C7100520849 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5C5243E4C9900520849 /* ProfileDetailEditViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9AB6A5C7243E55DD00520849 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5D0243E70E400520849 /* ProfileUserPresenterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9AB6A5C8243E55E800520849 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5CE243E70D500520849 /* ProfileUserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9AB6A5C9243E55F900520849 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5CB243E708F00520849 /* Configurator */,
+				9AB6A5C2243E4C4800520849 /* Controller */,
+				9AB6A5CA243E561C00520849 /* ViewData */,
+				9AB6A5BC243E370900520849 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9AB6A5CA243E561C00520849 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5D6243E7FF100520849 /* ProfileEditViewData.swift */,
+			);
+			path = ViewData;
+			sourceTree = "<group>";
+		};
+		9AB6A5CB243E708F00520849 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5CC243E70B700520849 /* ProfileUserConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		9AB6A5D2243E712200520849 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5E8243EBCE700520849 /* DataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9AB6A5D3243E712C00520849 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5D8243E803500520849 /* Model */,
+				9AB6A5DF243EB42300520849 /* Interactor */,
+				9AB6A5E5243EBB2600520849 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9AB6A5D8243E803500520849 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A61A243ED86200520849 /* ErrorResponse.swift */,
+				9AB6A61B243ED86200520849 /* ResponseType.swift */,
+				9AB6A5D9243E804000520849 /* ProfileDetail.swift */,
+				9AB6A5DD243E838C00520849 /* Profile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9AB6A5DF243EB42300520849 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5E3243EB4D400520849 /* Interactor.swift */,
+				9AB6A5E0243EB42C00520849 /* Services */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9AB6A5E0243EB42C00520849 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5E1243EB45300520849 /* ProfileInteractorProtocol.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9AB6A5E5243EBB2600520849 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5E6243EBBD900520849 /* ProfileRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9AB6A5E8243EBCE700520849 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5E9243EBD0A00520849 /* Network */,
+				9AB6A5F5243EBFBE00520849 /* Entity */,
+				9AB6A5FB243EC94E00520849 /* Repository */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		9AB6A5E9243EBD0A00520849 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A606243ECBC000520849 /* Rechability */,
+				9AB6A60B243ECFDE00520849 /* Responses */,
+				9AB6A5EA243EBD2D00520849 /* Request */,
+				9AB6A5F0243EBF2200520849 /* Protocols */,
+				9AB6A5F1243EBF3000520849 /* Implementation */,
+				9AB6A5F2243EBF3A00520849 /* Setup */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9AB6A5EA243EBD2D00520849 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5EB243EBD4100520849 /* ProfileRequest */,
+				9AB6A5EC243EBD6E00520849 /* ResquestProtocol.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		9AB6A5EB243EBD4100520849 /* ProfileRequest */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5EE243EBDAD00520849 /* ProfileRequest.swift */,
+			);
+			path = ProfileRequest;
+			sourceTree = "<group>";
+		};
+		9AB6A5F0243EBF2200520849 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5F3243EBF6F00520849 /* ServiceDataSourceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9AB6A5F1243EBF3000520849 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5FE243ECA1300520849 /* ServiceDataSourceImplementation.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		9AB6A5F2243EBF3A00520849 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A600243ECB1000520849 /* TimberjackHelper.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		9AB6A5F5243EBFBE00520849 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5F6243EBFCE00520849 /* ProfileEntity */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9AB6A5F6243EBFCE00520849 /* ProfileEntity */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5F7243EBFDC00520849 /* ProfileDetailEntity.swift */,
+				9AB6A5F9243EC03F00520849 /* ProfileEditEntity.swift */,
+			);
+			path = ProfileEntity;
+			sourceTree = "<group>";
+		};
+		9AB6A5FB243EC94E00520849 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A5FC243EC99100520849 /* ProfileRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9AB6A606243ECBC000520849 /* Rechability */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A607243ECBCA00520849 /* Rechability.swift */,
+			);
+			path = Rechability;
+			sourceTree = "<group>";
+		};
+		9AB6A60B243ECFDE00520849 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A60C243ECFDE00520849 /* Success */,
+				9AB6A60F243ECFDE00520849 /* Error */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		9AB6A60C243ECFDE00520849 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A60D243ECFDE00520849 /* Handlers */,
+			);
+			path = Success;
+			sourceTree = "<group>";
+		};
+		9AB6A60D243ECFDE00520849 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A60E243ECFDE00520849 /* ServiceResponseHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		9AB6A60F243ECFDE00520849 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A612243ECFDE00520849 /* Handlers */,
+				9AB6A610243ECFDE00520849 /* ServiceError.swift */,
+				9AB6A611243ECFDE00520849 /* HttpError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9AB6A612243ECFDE00520849 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A613243ECFDE00520849 /* ServiceErrorHandler.swift */,
+				9AB6A614243ECFDE00520849 /* HttpErrorHandler.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		9AB6A61E243EE3B900520849 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A620243EE3F400520849 /* GenericElements */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9AB6A61F243EE3E500520849 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9AB6A620243EE3F400520849 /* GenericElements */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A624243EE53F00520849 /* Views */,
+				9AB6A621243EE40500520849 /* Protocols */,
+			);
+			path = GenericElements;
+			sourceTree = "<group>";
+		};
+		9AB6A621243EE40500520849 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A622243EE41B00520849 /* Loadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9AB6A624243EE53F00520849 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A625243EE55100520849 /* ErrorViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9AB6A625243EE55100520849 /* ErrorViews */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6A627243EE5F100520849 /* ErrorPlaceholderView.swift */,
+				9AB6A626243EE5F100520849 /* ErrorPlaceholderView.xib */,
+			);
+			path = ErrorViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +495,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AB6A59F243E167B00520849 /* Build configuration list for PBXNativeTarget "KaraokeSmartIOS" */;
 			buildPhases = (
+				38EE9B39370DE7FDCCF75463 /* [CP] Check Pods Manifest.lock */,
 				9AB6A587243E167000520849 /* Sources */,
 				9AB6A588243E167000520849 /* Frameworks */,
 				9AB6A589243E167000520849 /* Resources */,
+				B8AEB8FA808B40D7E7C5BA48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB6A59B243E167B00520849 /* LaunchScreen.storyboard in Resources */,
+				9AB6A628243EE5F100520849 /* ErrorPlaceholderView.xib in Resources */,
 				9AB6A598243E167B00520849 /* Assets.xcassets in Resources */,
 				9AB6A596243E167000520849 /* Main.storyboard in Resources */,
 			);
@@ -133,12 +557,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38EE9B39370DE7FDCCF75463 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaraokeSmartIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8AEB8FA808B40D7E7C5BA48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaraokeSmartIOS/Pods-KaraokeSmartIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaraokeSmartIOS/Pods-KaraokeSmartIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KaraokeSmartIOS/Pods-KaraokeSmartIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9AB6A587243E167000520849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB6A593243E167000520849 /* ViewController.swift in Sources */,
+				9AB6A5F8243EBFDC00520849 /* ProfileDetailEntity.swift in Sources */,
+				9AB6A5FF243ECA1300520849 /* ServiceDataSourceImplementation.swift in Sources */,
+				9AB6A616243ECFDF00520849 /* ServiceError.swift in Sources */,
+				9AB6A5E2243EB45300520849 /* ProfileInteractorProtocol.swift in Sources */,
+				9AB6A5D7243E7FF100520849 /* ProfileEditViewData.swift in Sources */,
+				9AB6A5DE243E838C00520849 /* Profile.swift in Sources */,
+				9AB6A5DA243E804000520849 /* ProfileDetail.swift in Sources */,
+				9AB6A61C243ED86200520849 /* ErrorResponse.swift in Sources */,
+				9AB6A5EF243EBDAD00520849 /* ProfileRequest.swift in Sources */,
+				9AB6A5D1243E70E400520849 /* ProfileUserPresenterRouter.swift in Sources */,
+				9AB6A5CF243E70D500520849 /* ProfileUserPresenter.swift in Sources */,
+				9AB6A5BF243E40AA00520849 /* MusicKaraokeTableViewCell.swift in Sources */,
+				9AB6A5CD243E70B700520849 /* ProfileUserConfigurator.swift in Sources */,
+				9AB6A5D5243E742900520849 /* ViewData.swift in Sources */,
+				9AB6A61D243ED86200520849 /* ResponseType.swift in Sources */,
+				9AB6A615243ECFDF00520849 /* ServiceResponseHandler.swift in Sources */,
+				9AB6A5B5243E285500520849 /* ProfileUserViewController.swift in Sources */,
+				9AB6A5FD243EC99100520849 /* ProfileRepository.swift in Sources */,
+				9AB6A608243ECBCA00520849 /* Rechability.swift in Sources */,
+				9AB6A5F4243EBF6F00520849 /* ServiceDataSourceProtocol.swift in Sources */,
+				9AB6A5C6243E4C9900520849 /* ProfileDetailEditViewController.swift in Sources */,
+				9AB6A5ED243EBD6E00520849 /* ResquestProtocol.swift in Sources */,
+				9AB6A5FA243EC03F00520849 /* ProfileEditEntity.swift in Sources */,
+				9AB6A618243ECFDF00520849 /* ServiceErrorHandler.swift in Sources */,
+				9AB6A629243EE5F100520849 /* ErrorPlaceholderView.swift in Sources */,
+				9AB6A617243ECFDF00520849 /* HttpError.swift in Sources */,
+				9AB6A619243ECFDF00520849 /* HttpErrorHandler.swift in Sources */,
+				9AB6A5E4243EB4D400520849 /* Interactor.swift in Sources */,
+				9AB6A5E7243EBBD900520849 /* ProfileRepositoryProtocol.swift in Sources */,
+				9AB6A603243ECB1000520849 /* TimberjackHelper.swift in Sources */,
+				9AB6A623243EE41B00520849 /* Loadable.swift in Sources */,
 				9AB6A58F243E167000520849 /* AppDelegate.swift in Sources */,
 				9AB6A591243E167000520849 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +778,7 @@
 		};
 		9AB6A5A0243E167B00520849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A052F0A3683C555667053DDB /* Pods-KaraokeSmartIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +797,7 @@
 		};
 		9AB6A5A1243E167B00520849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDCA1C7254013964EB0989DF /* Pods-KaraokeSmartIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
