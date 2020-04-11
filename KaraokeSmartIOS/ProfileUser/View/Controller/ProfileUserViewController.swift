@@ -59,26 +59,15 @@ class ProfileUserViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setupNavigation()
-        profileUser()
           print("aCA A  Iniciales ")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         print("aCA B Iniciales ")
-        profileUser()
         tbProfile.reloadData()
 
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        print("aCA C ")
-        profileUser()
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        print("aCA D")
-        profileUser()
-    }
     
   
     
@@ -130,11 +119,11 @@ class ProfileUserViewController: UIViewController {
     @IBAction func didTapEditProfile(_ sender: UIButton) {
         presenter.didTapProfileEdit()
     }
-    @IBAction func didTapSessionOff(_ sender: UIButton) {
-        try! Auth.auth().signOut()
-        self.dismiss(animated: false, completion: nil)
-        
-    }
+//    @IBAction func didTapSessionOff(_ sender: UIButton) {
+//        try! Auth.auth().signOut()
+//        self.dismiss(animated: false, completion: nil)
+//        
+//    }
 }
 
 extension ProfileUserViewController{
