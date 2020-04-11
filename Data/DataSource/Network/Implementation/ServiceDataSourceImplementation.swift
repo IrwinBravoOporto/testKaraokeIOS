@@ -13,8 +13,6 @@ import Alamofire
 class ServiceDataSourceImplementation:ServiceDataSource{
     
     private var sessionManager: SessionManager?
-    
-    
     init() {
         let configuration = URLSessionConfiguration.default
         configuration.requestCachePolicy = .reloadRevalidatingCacheData
@@ -36,7 +34,7 @@ class ServiceDataSourceImplementation:ServiceDataSource{
                 print("TASKS",tasks)
                 tasks.forEach({$0.cancel()})
             }
-        sessionManager?.request("http://www.mocky.io/v2/5e3a01073200006700ddfe05", method: requestRef.method, parameters: nil, encoding: requestRef.encoding, headers: requestRef.headers).validate().responseData(completionHandler: { (response) in
+        sessionManager?.request("http://www.mocky.io/v2/5e3a01073200006700ddfe05", method: requestRef.method, parameters: nil, encoding: requestRef.encoding, headers: nil).validate().responseData(completionHandler: { (response) in
                         
                         let resstr = NSString(data: response.data ?? Data(), encoding: String.Encoding.utf8.rawValue)
                         debugPrint(resstr!)

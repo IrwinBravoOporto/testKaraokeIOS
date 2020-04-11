@@ -9,6 +9,10 @@
 import Foundation
 
 
-struct ProfileEditViewData: ViewData {
-    let profileDetail:ProfileDetail
+//struct ProfileEditViewData: ViewData {
+//    let profileDetail:ProfileDetail
+//}
+
+struct ProfileDetailViewData: ViewData {
+    var profileDetail: [ProfileDetail]
 }

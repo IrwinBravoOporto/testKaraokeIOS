@@ -7,18 +7,19 @@
 //
 
 import UIKit
-import WebKit
 
 class MusicKaraokeTableViewCell: UITableViewCell {
     @IBOutlet weak var img_Profile: UIImageView!
     @IBOutlet weak var labelTextDescriptionUser: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
-    @IBOutlet weak var webViewUrlMusic: WKWebView!
-    
+    @IBOutlet weak var view1: UIView!
+
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        img_Profile.layer.cornerRadius = img_Profile.bounds.size.width / 2.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,5 +27,7 @@ class MusicKaraokeTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+
     
 }

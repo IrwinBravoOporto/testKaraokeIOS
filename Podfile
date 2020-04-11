@@ -8,5 +8,11 @@ target 'KaraokeSmartIOS' do
   # Pods for KaraokeSmartIOS
   
   pod 'Alamofire', '~> 4.9.1'
-
+  pod 'SwiftVideoBackground'
+  pod 'Firebase/Core'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'SDWebImage', '~> 5.0'
+  
 end

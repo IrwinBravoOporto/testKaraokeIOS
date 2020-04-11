@@ -11,7 +11,7 @@ import UIKit
 
 protocol ProfileUserViewControllerRouterProtocol {
     func routerGoToProfileDetail()
-//    func routeToPrevious()
+    func routeToPreviousDestination()
 }
 
 
@@ -29,15 +29,12 @@ extension ProfileUserViewControllerRouter:ProfileUserViewControllerRouterProtoco
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         guard let viewProfileDetail = storyboard.instantiateViewController(withIdentifier: "ProfileDetailEditViewController") as? ProfileDetailEditViewController, let view = currentViewController else {return}
-//        viewProfileDetail.viewData = data
-//        withData data: ViewData
         view.navigationController?.pushViewController(viewProfileDetail, animated: true)
     }
-    
-//    func routeToPrevious() {
-//           guard let view = self.currentViewController else { return }
-//           view.navigationController?.popViewController(animated: true)
-//       }
+    func routeToPreviousDestination() {
+        guard let viewRef = currentViewController else { return }
+        viewRef.dismiss(animated: true, completion: nil)
+    }
     
     
 }

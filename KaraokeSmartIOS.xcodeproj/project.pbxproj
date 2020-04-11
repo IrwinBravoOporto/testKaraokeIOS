@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7CE71ADAE6F455C97E15F0C7 /* Pods_KaraokeSmartIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C4BBEA904671B883077396 /* Pods_KaraokeSmartIOS.framework */; };
+		9A29EEAF2440323D00BF38A2 /* ProfileDetailEditConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EEAE2440323D00BF38A2 /* ProfileDetailEditConfigurator.swift */; };
+		9A29EEB12440327400BF38A2 /* ProfileDetailEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EEB02440327400BF38A2 /* ProfileDetailEditPresenter.swift */; };
+		9A29EEB32440328000BF38A2 /* ProfileDetailEditRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EEB22440328000BF38A2 /* ProfileDetailEditRouter.swift */; };
+		9A29EEB524404C0A00BF38A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A29EEB424404C0A00BF38A2 /* GoogleService-Info.plist */; };
+		9A29EEB82440509100BF38A2 /* SingUpUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EEB72440509100BF38A2 /* SingUpUserViewController.swift */; };
+		9A29EEC0244054C100BF38A2 /* SingUpUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EEBF244054C100BF38A2 /* SingUpUserConfigurator.swift */; };
+		9A29EEC2244054DB00BF38A2 /* SingUpUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EEC1244054DB00BF38A2 /* SingUpUserPresenter.swift */; };
+		9A29EEC4244054E500BF38A2 /* SingUpUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EEC3244054E500BF38A2 /* SingUpUserRouter.swift */; };
+		9A29EEC62440CA4900BF38A2 /* LoginUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EEC52440CA4900BF38A2 /* LoginUserProfileViewController.swift */; };
+		9A29EECE2440D09700BF38A2 /* LoginUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EECD2440D09700BF38A2 /* LoginUserConfigurator.swift */; };
+		9A29EED02440D0A200BF38A2 /* LoginUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EECF2440D0A200BF38A2 /* LoginUserRouter.swift */; };
+		9A29EED22440D0AD00BF38A2 /* LoginUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EED12440D0AD00BF38A2 /* LoginUserPresenter.swift */; };
+		9A29EED724414CDE00BF38A2 /* UserProFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A29EED624414CDE00BF38A2 /* UserProFile.swift */; };
 		9AB6A58F243E167000520849 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A58E243E167000520849 /* AppDelegate.swift */; };
 		9AB6A591243E167000520849 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A590243E167000520849 /* SceneDelegate.swift */; };
 		9AB6A596243E167000520849 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6A594243E167000520849 /* Main.storyboard */; };
@@ -20,7 +33,7 @@
 		9AB6A5CF243E70D500520849 /* ProfileUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5CE243E70D500520849 /* ProfileUserPresenter.swift */; };
 		9AB6A5D1243E70E400520849 /* ProfileUserPresenterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D0243E70E400520849 /* ProfileUserPresenterRouter.swift */; };
 		9AB6A5D5243E742900520849 /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D4243E742900520849 /* ViewData.swift */; };
-		9AB6A5D7243E7FF100520849 /* ProfileEditViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D6243E7FF100520849 /* ProfileEditViewData.swift */; };
+		9AB6A5D7243E7FF100520849 /* ProfileDetailViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D6243E7FF100520849 /* ProfileDetailViewData.swift */; };
 		9AB6A5DA243E804000520849 /* ProfileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5D9243E804000520849 /* ProfileDetail.swift */; };
 		9AB6A5DE243E838C00520849 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5DD243E838C00520849 /* Profile.swift */; };
 		9AB6A5E2243EB45300520849 /* ProfileInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6A5E1243EB45300520849 /* ProfileInteractorProtocol.swift */; };
@@ -49,6 +62,19 @@
 
 /* Begin PBXFileReference section */
 		33C4BBEA904671B883077396 /* Pods_KaraokeSmartIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaraokeSmartIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A29EEAE2440323D00BF38A2 /* ProfileDetailEditConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailEditConfigurator.swift; sourceTree = "<group>"; };
+		9A29EEB02440327400BF38A2 /* ProfileDetailEditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailEditPresenter.swift; sourceTree = "<group>"; };
+		9A29EEB22440328000BF38A2 /* ProfileDetailEditRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailEditRouter.swift; sourceTree = "<group>"; };
+		9A29EEB424404C0A00BF38A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9A29EEB72440509100BF38A2 /* SingUpUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpUserViewController.swift; sourceTree = "<group>"; };
+		9A29EEBF244054C100BF38A2 /* SingUpUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpUserConfigurator.swift; sourceTree = "<group>"; };
+		9A29EEC1244054DB00BF38A2 /* SingUpUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpUserPresenter.swift; sourceTree = "<group>"; };
+		9A29EEC3244054E500BF38A2 /* SingUpUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpUserRouter.swift; sourceTree = "<group>"; };
+		9A29EEC52440CA4900BF38A2 /* LoginUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserProfileViewController.swift; sourceTree = "<group>"; };
+		9A29EECD2440D09700BF38A2 /* LoginUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserConfigurator.swift; sourceTree = "<group>"; };
+		9A29EECF2440D0A200BF38A2 /* LoginUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserRouter.swift; sourceTree = "<group>"; };
+		9A29EED12440D0AD00BF38A2 /* LoginUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserPresenter.swift; sourceTree = "<group>"; };
+		9A29EED624414CDE00BF38A2 /* UserProFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProFile.swift; sourceTree = "<group>"; };
 		9AB6A58B243E167000520849 /* KaraokeSmartIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaraokeSmartIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB6A58E243E167000520849 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AB6A590243E167000520849 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +89,7 @@
 		9AB6A5CE243E70D500520849 /* ProfileUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserPresenter.swift; sourceTree = "<group>"; };
 		9AB6A5D0243E70E400520849 /* ProfileUserPresenterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUserPresenterRouter.swift; sourceTree = "<group>"; };
 		9AB6A5D4243E742900520849 /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
-		9AB6A5D6243E7FF100520849 /* ProfileEditViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewData.swift; sourceTree = "<group>"; };
+		9AB6A5D6243E7FF100520849 /* ProfileDetailViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewData.swift; sourceTree = "<group>"; };
 		9AB6A5D9243E804000520849 /* ProfileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetail.swift; sourceTree = "<group>"; };
 		9AB6A5DD243E838C00520849 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9AB6A5E1243EB45300520849 /* ProfileInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractorProtocol.swift; sourceTree = "<group>"; };
@@ -121,10 +147,154 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9A29EEAA244031DA00BF38A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEB02440327400BF38A2 /* ProfileDetailEditPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A29EEAB244031E200BF38A2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEB22440328000BF38A2 /* ProfileDetailEditRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9A29EEAC244031ED00BF38A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEAD2440320400BF38A2 /* Configurator */,
+				9AB6A5C4243E4C7100520849 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A29EEAD2440320400BF38A2 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEAE2440323D00BF38A2 /* ProfileDetailEditConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		9A29EEB62440503200BF38A2 /* SingUpUser */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEBD2440549000BF38A2 /* Router */,
+				9A29EEBC2440548300BF38A2 /* Presenter */,
+				9A29EEBA2440547100BF38A2 /* View */,
+			);
+			path = SingUpUser;
+			sourceTree = "<group>";
+		};
+		9A29EEB9244050DD00BF38A2 /* LoginUser */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEC82440D02700BF38A2 /* Router */,
+				9A29EEC92440D03C00BF38A2 /* Presenter */,
+				9A29EEC72440CE8100BF38A2 /* View */,
+			);
+			path = LoginUser;
+			sourceTree = "<group>";
+		};
+		9A29EEBA2440547100BF38A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEBE2440549800BF38A2 /* Configurator */,
+				9A29EEBB2440547A00BF38A2 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A29EEBB2440547A00BF38A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEB72440509100BF38A2 /* SingUpUserViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A29EEBC2440548300BF38A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEC1244054DB00BF38A2 /* SingUpUserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A29EEBD2440549000BF38A2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEC3244054E500BF38A2 /* SingUpUserRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9A29EEBE2440549800BF38A2 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEBF244054C100BF38A2 /* SingUpUserConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		9A29EEC72440CE8100BF38A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EECC2440D06300BF38A2 /* Configurator */,
+				9A29EECB2440D05A00BF38A2 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A29EEC82440D02700BF38A2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EECF2440D0A200BF38A2 /* LoginUserRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		9A29EEC92440D03C00BF38A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EED12440D0AD00BF38A2 /* LoginUserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A29EECB2440D05A00BF38A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EEC52440CA4900BF38A2 /* LoginUserProfileViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A29EECC2440D06300BF38A2 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EECD2440D09700BF38A2 /* LoginUserConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		9A29EED324414C5E00BF38A2 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				9A29EED624414CDE00BF38A2 /* UserProFile.swift */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
 		9AB6A582243E166F00520849 = {
 			isa = PBXGroup;
 			children = (
 				9AB6A58D243E167000520849 /* KaraokeSmartIOS */,
+				9A29EED324414C5E00BF38A2 /* UserService */,
 				9AB6A5D3243E712C00520849 /* Domain */,
 				9AB6A5D2243E712200520849 /* Data */,
 				9AB6A58C243E167000520849 /* Products */,
@@ -150,6 +320,9 @@
 				9AB6A597243E167B00520849 /* Assets.xcassets */,
 				9AB6A599243E167B00520849 /* LaunchScreen.storyboard */,
 				9AB6A59C243E167B00520849 /* Info.plist */,
+				9A29EEB424404C0A00BF38A2 /* GoogleService-Info.plist */,
+				9A29EEB9244050DD00BF38A2 /* LoginUser */,
+				9A29EEB62440503200BF38A2 /* SingUpUser */,
 				9AB6A5C3243E4C6300520849 /* DetailProfile */,
 				9AB6A5C1243E4C3700520849 /* ProfileUser */,
 				9AB6A61E243EE3B900520849 /* Support */,
@@ -168,7 +341,6 @@
 		9AB6A5C1243E4C3700520849 /* ProfileUser */ = {
 			isa = PBXGroup;
 			children = (
-				9AB6A61F243EE3E500520849 /* New Group */,
 				9AB6A5C7243E55DD00520849 /* Router */,
 				9AB6A5C8243E55E800520849 /* Presenter */,
 				9AB6A5C9243E55F900520849 /* View */,
@@ -188,7 +360,9 @@
 		9AB6A5C3243E4C6300520849 /* DetailProfile */ = {
 			isa = PBXGroup;
 			children = (
-				9AB6A5C4243E4C7100520849 /* Controller */,
+				9A29EEAB244031E200BF38A2 /* Router */,
+				9A29EEAA244031DA00BF38A2 /* Presenter */,
+				9A29EEAC244031ED00BF38A2 /* View */,
 			);
 			path = DetailProfile;
 			sourceTree = "<group>";
@@ -231,7 +405,7 @@
 		9AB6A5CA243E561C00520849 /* ViewData */ = {
 			isa = PBXGroup;
 			children = (
-				9AB6A5D6243E7FF100520849 /* ProfileEditViewData.swift */,
+				9AB6A5D6243E7FF100520849 /* ProfileDetailViewData.swift */,
 			);
 			path = ViewData;
 			sourceTree = "<group>";
@@ -447,13 +621,6 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		9AB6A61F243EE3E500520849 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		9AB6A620243EE3F400520849 /* GenericElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +717,7 @@
 			files = (
 				9AB6A59B243E167B00520849 /* LaunchScreen.storyboard in Resources */,
 				9AB6A628243EE5F100520849 /* ErrorPlaceholderView.xib in Resources */,
+				9A29EEB524404C0A00BF38A2 /* GoogleService-Info.plist in Resources */,
 				9AB6A598243E167B00520849 /* Assets.xcassets in Resources */,
 				9AB6A596243E167000520849 /* Main.storyboard in Resources */,
 			);
@@ -605,10 +773,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB6A5F8243EBFDC00520849 /* ProfileDetailEntity.swift in Sources */,
+				9A29EEC62440CA4900BF38A2 /* LoginUserProfileViewController.swift in Sources */,
+				9A29EEAF2440323D00BF38A2 /* ProfileDetailEditConfigurator.swift in Sources */,
 				9AB6A5FF243ECA1300520849 /* ServiceDataSourceImplementation.swift in Sources */,
 				9AB6A616243ECFDF00520849 /* ServiceError.swift in Sources */,
 				9AB6A5E2243EB45300520849 /* ProfileInteractorProtocol.swift in Sources */,
-				9AB6A5D7243E7FF100520849 /* ProfileEditViewData.swift in Sources */,
+				9AB6A5D7243E7FF100520849 /* ProfileDetailViewData.swift in Sources */,
 				9AB6A5DE243E838C00520849 /* Profile.swift in Sources */,
 				9AB6A5DA243E804000520849 /* ProfileDetail.swift in Sources */,
 				9AB6A61C243ED86200520849 /* ErrorResponse.swift in Sources */,
@@ -617,7 +787,9 @@
 				9AB6A5CF243E70D500520849 /* ProfileUserPresenter.swift in Sources */,
 				9AB6A5BF243E40AA00520849 /* MusicKaraokeTableViewCell.swift in Sources */,
 				9AB6A5CD243E70B700520849 /* ProfileUserConfigurator.swift in Sources */,
+				9A29EED22440D0AD00BF38A2 /* LoginUserPresenter.swift in Sources */,
 				9AB6A5D5243E742900520849 /* ViewData.swift in Sources */,
+				9A29EEC2244054DB00BF38A2 /* SingUpUserPresenter.swift in Sources */,
 				9AB6A61D243ED86200520849 /* ResponseType.swift in Sources */,
 				9AB6A615243ECFDF00520849 /* ServiceResponseHandler.swift in Sources */,
 				9AB6A5B5243E285500520849 /* ProfileUserViewController.swift in Sources */,
@@ -627,16 +799,24 @@
 				9AB6A5C6243E4C9900520849 /* ProfileDetailEditViewController.swift in Sources */,
 				9AB6A5ED243EBD6E00520849 /* ResquestProtocol.swift in Sources */,
 				9AB6A5FA243EC03F00520849 /* ProfileEditEntity.swift in Sources */,
+				9A29EED02440D0A200BF38A2 /* LoginUserRouter.swift in Sources */,
 				9AB6A618243ECFDF00520849 /* ServiceErrorHandler.swift in Sources */,
+				9A29EEB12440327400BF38A2 /* ProfileDetailEditPresenter.swift in Sources */,
 				9AB6A629243EE5F100520849 /* ErrorPlaceholderView.swift in Sources */,
+				9A29EED724414CDE00BF38A2 /* UserProFile.swift in Sources */,
 				9AB6A617243ECFDF00520849 /* HttpError.swift in Sources */,
 				9AB6A619243ECFDF00520849 /* HttpErrorHandler.swift in Sources */,
 				9AB6A5E4243EB4D400520849 /* Interactor.swift in Sources */,
 				9AB6A5E7243EBBD900520849 /* ProfileRepositoryProtocol.swift in Sources */,
+				9A29EECE2440D09700BF38A2 /* LoginUserConfigurator.swift in Sources */,
 				9AB6A603243ECB1000520849 /* TimberjackHelper.swift in Sources */,
+				9A29EEC4244054E500BF38A2 /* SingUpUserRouter.swift in Sources */,
+				9A29EEB82440509100BF38A2 /* SingUpUserViewController.swift in Sources */,
 				9AB6A623243EE41B00520849 /* Loadable.swift in Sources */,
 				9AB6A58F243E167000520849 /* AppDelegate.swift in Sources */,
 				9AB6A591243E167000520849 /* SceneDelegate.swift in Sources */,
+				9A29EEB32440328000BF38A2 /* ProfileDetailEditRouter.swift in Sources */,
+				9A29EEC0244054C100BF38A2 /* SingUpUserConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

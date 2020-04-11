@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public struct  ProfileDetail{
    
     public var profile:Profile?
