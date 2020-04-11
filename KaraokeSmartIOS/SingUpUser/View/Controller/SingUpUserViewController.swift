@@ -39,10 +39,10 @@ class SingUpUserViewController: UIViewController{
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(openImagePicker))
         imgProfile.isUserInteractionEnabled = true
         imgProfile.addGestureRecognizer(imageTap)
-        imgProfile.layer.cornerRadius = imgProfile.bounds.height / 3
+        self.imgProfile.layer.cornerRadius = self.imgProfile.bounds.height / 2
         imgProfile.clipsToBounds = true
         btnChangeImg.addTarget(self, action: #selector(openImagePicker), for: .touchUpInside)
-        
+        setPrimaryFilled(buttonStyle: buttonSingUp)
         
         textFieldUserName.delegate = self
         textFieldUserEmail.delegate = self
@@ -52,13 +52,21 @@ class SingUpUserViewController: UIViewController{
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
-        
+        logiDataResult()
     }
     
     override func viewWillAppear(_ animated:Bool){
         super.viewWillAppear(animated)
         textFieldUserName.becomeFirstResponder()
         setupNavigation()
+        logiDataResult()
+        self.imgProfile.layer.cornerRadius = self.imgProfile.bounds.height / 2
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        logiDataResult()
+        self.imgProfile.layer.cornerRadius = self.imgProfile.bounds.height / 2
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -66,9 +74,27 @@ class SingUpUserViewController: UIViewController{
         textFieldUserName.resignFirstResponder()
         textFieldUserEmail.resignFirstResponder()
         textFieldPasswordUser.resignFirstResponder()
-        
+        self.imgProfile.layer.cornerRadius = self.imgProfile.bounds.height / 2
         NotificationCenter.default.removeObserver(self)
+        logiDataResult()
         
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.imgProfile.layer.cornerRadius = self.imgProfile.bounds.height / 2
+        logiDataResult()
+        
+    }
+    
+    
+    
+    private func setPrimaryFilled(buttonStyle:UIButton) {
+        
+        DispatchQueue.main.async(execute: {
+            buttonStyle.titleLabel?.font = UIFont(name: "Prelo-Bold", size: 14)
+            buttonStyle.layer.shadowColor = UIColor.clear.cgColor
+            buttonStyle.layer.cornerRadius = 14
+        })
     }
     
     @objc func openImagePicker(_ sender:Any){
@@ -76,7 +102,7 @@ class SingUpUserViewController: UIViewController{
         self.present(imagePicker, animated: true, completion: nil)
     }
     
-    func singUp(email:String,password:String,name:String,image:UIImage){
+    func singUp(email:String,password:String,name:String,image:UIImage,newUserArt:String,newBioText:String){
         Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
             if error == nil && user != nil {
                 print("User created")
@@ -91,11 +117,11 @@ class SingUpUserViewController: UIViewController{
                         changeRequest?.commitChanges { (error) in
                             if error == nil {
                                 print("User display name changed!")
-                                self.saveProfile(username: name, profileImageUrl: url!){
+                                self.saveProfile(username: name, newUserArt: newUserArt, newBioText: newBioText, profileImageUrl: url!){
                                     success in
                                     if success{
                                         self.dismiss(animated: true, completion: nil)
-                                       
+                                        
                                     }
                                 }
                             }else{
@@ -107,11 +133,10 @@ class SingUpUserViewController: UIViewController{
                     }
                     
                 }
-        
+                
             }else {
                 print("Error creating User: \(error?.localizedDescription ?? "")")
             }
-             self.presenter.goToProfileUser()
         }
     }
     
@@ -147,12 +172,12 @@ class SingUpUserViewController: UIViewController{
         }
     }
     
-    func saveProfile(username:String,profileImageUrl:URL,completion: @escaping ((_ success:Bool)->())){
+    func saveProfile(username:String,newUserArt:String,newBioText:String,profileImageUrl:URL,completion: @escaping ((_ success:Bool)->())){
         guard let uid = Auth.auth().currentUser?.uid else {return}
-
+        
         let dataBaseRef = Database.database().reference().child("users/profile/\(uid)")
         
-        let userObject = ["username":username,"photoUrl":profileImageUrl.absoluteString] as[String:Any]
+        let userObject = ["username":username,"photoUrl":profileImageUrl.absoluteString,"artist":newUserArt,"bio":newBioText] as[String:Any]
         
         dataBaseRef.setValue(userObject){
             error, ref  in
@@ -161,11 +186,23 @@ class SingUpUserViewController: UIViewController{
         
     }
     @IBAction func didTapSingUpLogin(_ sender: UIButton) {
-        guard let username = textFieldUserName.text else {return}
-        guard let Image = imgProfile.image else {return}
-        guard let email = textFieldUserEmail.text else {return}
-        guard let password = textFieldPasswordUser.text else {return}
-        singUp(email: email,password: password, name: username, image: Image)
+        logiDataResult()
+        self.presenter.goToProfileUser()
+
+    }
+    
+    func logiDataResult(){
+        
+        guard let username = textFieldUserName.text else {return }
+        guard let Image = imgProfile.image else {return }
+        guard let email = textFieldUserEmail.text else {return }
+        guard let password = textFieldPasswordUser.text else {return }
+        
+        if email.isEmpty == false {
+            singUp(email: email,password: password, name: username, image: Image, newUserArt: "", newBioText: "")
+        }
+            
+        
     }
     
     @IBAction func didTapChangeImg(_ sender: UIButton) {
@@ -202,19 +239,24 @@ extension SingUpUserViewController:SingUpUserViewControllerProtocol{
 
 extension SingUpUserViewController:UIImagePickerControllerDelegate{
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        
         picker.dismiss(animated: true, completion: nil)
+        
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let pickImage = info[.originalImage]  as? UIImage{
             self.imgProfile.image = pickImage
+            self.imgProfile.layer.cornerRadius = self.imgProfile.bounds.height / 2
+            
         }
+        
         picker.dismiss(animated: true, completion: nil)
+        
     }
 }
 
 extension SingUpUserViewController:UITextFieldDelegate,UINavigationControllerDelegate{
-    
     
     
     

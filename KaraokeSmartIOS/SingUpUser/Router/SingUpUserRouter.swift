@@ -37,7 +37,7 @@ extension SingUpUserRouter:SingUpUserRouterProtocol{
     func routeToLoginUser() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        guard let viewProfile = storyboard.instantiateViewController(withIdentifier: "LoginUserViewController") as? LoginUserProfileViewController, let view = currentViewController else {return}
+        guard let viewProfile = storyboard.instantiateViewController(withIdentifier: "LoginUserProfileViewController") as? LoginUserProfileViewController, let view = currentViewController else {return}
         view.navigationController?.pushViewController(viewProfile, animated: true)
     }
     

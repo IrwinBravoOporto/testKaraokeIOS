@@ -31,7 +31,7 @@ extension SingUpUserPresenter:SingUpUserPresenterProtocol{
         router.routeToPrevious()
     }
     func goToProfileUser() {
-        router.routeToLoginUser()
+        router.routeToProfileUser()
     }
     
     func goToLoginUser() {

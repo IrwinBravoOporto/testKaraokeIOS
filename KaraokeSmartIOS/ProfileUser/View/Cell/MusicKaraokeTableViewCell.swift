@@ -20,6 +20,8 @@ class MusicKaraokeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         img_Profile.layer.cornerRadius = img_Profile.bounds.size.width / 2.0
+        view1.layer.cornerRadius = 20
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

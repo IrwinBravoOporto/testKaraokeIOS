@@ -40,6 +40,7 @@ class ProfileUserViewController: UIViewController {
     @IBOutlet weak var btnEditProfile: UIButton!
     @IBOutlet weak var tbProfile: UITableView!
     @IBOutlet weak var viewLoading: UIActivityIndicatorView!
+    @IBOutlet weak var viewCountViews: UIView!
     
     private let errorPlaceholderView = UINib(nibName: "ErrorPlaceholderView", bundle: nil).instantiate(withOwner: self, options: nil).first as! ErrorPlaceholderView
     
@@ -48,11 +49,17 @@ class ProfileUserViewController: UIViewController {
         setupView()
         refreshView()
         profileUser()
+        setPrimaryFilled(buttonStyle: btnEditProfile)
+        viewCountViews.layer.cornerRadius = 14
+        imgProfileUser.layer.cornerRadius = imgProfileUser.bounds.height / 2
+        
+        
         print("aCA 0 Iniciales")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setupNavigation()
+        profileUser()
           print("aCA A  Iniciales ")
     }
     
@@ -65,15 +72,24 @@ class ProfileUserViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         print("aCA C ")
+        profileUser()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         print("aCA D")
+        profileUser()
     }
     
   
     
-    
+    private func setPrimaryFilled(buttonStyle:UIButton) {
+        
+        DispatchQueue.main.async(execute: {
+            buttonStyle.titleLabel?.font = UIFont(name: "Prelo-Bold", size: 14)
+            buttonStyle.layer.shadowColor = UIColor.clear.cgColor
+            buttonStyle.layer.cornerRadius = 14
+        })
+    }
     
     func profileUser(){
         databaseRef = Database.database().reference()
@@ -98,7 +114,7 @@ class ProfileUserViewController: UIViewController {
                                 }
                                 }).resume()
                             self.lblUserNameArtistic.text = username
-                            self.lblNameUser.text = "@\(artistText)"
+                            self.lblNameUser.text = artistText
                             self.lblDetailUser.text = textBio
                             
                         }

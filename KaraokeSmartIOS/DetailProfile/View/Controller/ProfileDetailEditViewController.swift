@@ -63,7 +63,17 @@ class ProfileDetailEditViewController: UIViewController {
             databaseRef.child("users/profile/").child(userID).observe(.value) { (snapshot) in
                 if let values = snapshot.value as? NSDictionary{
                     if let profileImageUrl = values["photoUrl"] as? String{
-                        self.imgProfile.sd_setImage(with: URL(string: profileImageUrl))
+                        let url = URL(string: profileImageUrl)
+                        
+                        URLSession.shared.dataTask(with: url! ,completionHandler:  { (data, response, error) in
+                            if error != nil {
+                                print(error!)
+                                return
+                            }
+                            DispatchQueue.main.async {
+                                self.imgProfile.image = UIImage(data: data!)
+                            }
+                            }).resume()
                     }
                     self.txtFieldNameUser.text = values["username"] as? String
                     self.txtFieldNameUserArtístico.text = values["artist"] as? String
@@ -138,6 +148,7 @@ class ProfileDetailEditViewController: UIViewController {
                                     print(error!)
                                     return
                                 }
+                                
                                 print("Profile Successfully Update")
                             }
                         }
